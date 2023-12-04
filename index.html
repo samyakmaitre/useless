@@ -37,6 +37,7 @@
             color: white;
             text-align: center;
             padding: 14px 16px;
+            font-weight: bold;
             text-decoration: none;
         }
 
@@ -50,13 +51,15 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 30px;
+            
         }
 
         .button {
             position: relative;
-            width: 250px;
+            max-width: 250px;
             height: 250px;
             border-radius: 30px;
+            
             background: rgb(255, 255, 255);
             box-shadow: 
                 25px 25px 75px rgba(0, 225, 255, 0.25),
@@ -76,20 +79,22 @@
                 inset 5px 5px 15px rgb(119, 119, 119),
                 inset 5px 5px 25px rgb(119, 119, 119);
             transform: scale(1.05);
-            transition-duration: 3s;
-            trans
+            transition-duration: 2s;
+            
+
         }
 
         .button img {
-            width: 200px;
-            height: 200px;
-            padding: 20px 0px 0px 65px;
-            object-fit: cover;
+            position: relative;
+            max-height: 250px;
+            max-width: 220px;
+            /* padding: 20px 0px 0px 65px; */
+            /* object-fit: cover; */
         }
 
         .label {
             position: absolute;
-            bottom: 20px;
+            bottom:20px;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
