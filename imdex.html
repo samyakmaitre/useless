@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Squares</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        header img{
+            height: 75px;
+            width: 300px;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        .button {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 30px;
+            background: black;
+            box-shadow: 
+                25px 25px 75px rgba(122, 35, 35, 0.25),
+                10px 10px 170px rgba(189, 220, 10, 0.25),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+                inset 5px 5px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.3s, transform 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .button:hover {
+            box-shadow: 
+                30px 30px 80px rgba(122, 35, 35, 0.35),
+                15px 15px 180px rgba(189, 220, 10, 0.35),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.6),
+                inset 5px 5px 25px rgba(0, 0, 0, 0.6);
+            transform: scale(1.1);
+        }
+
+        .button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .label {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logo-01.png" alt="">
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('explore')">Explore</a>
+        <!-- Add more nav items as needed -->
+    </nav>
+
+    <section id="home">
+        <div class="button-container">
+            <div class="button">
+                <img src="image1.jpg" alt="Image 1">
+                <div class="label">Button 1</div>
+            </div>
+            <div class="button">
+                <img src="image2.jpg" alt="Image 2">
+                <div class="label">Button 2</div>
+            </div>
+            <div class="button">
+                <img src="image3.jpg" alt="Image 3">
+                <div class="label">Button 3</div>
+            </div>
+            <div class="button">
+                <img src="image4.jpg" alt="Image 4">
+                <div class="label">Button 4</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
