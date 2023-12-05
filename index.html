@@ -9,7 +9,6 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            /* background-color: #f0f0f0; */
             background-image: url(pexels-asad-photo-maldives-1024993.jpg);
         }
 
@@ -20,7 +19,7 @@
             color: white;
         }
 
-        header img{
+        header img {
             height: 75px;
             width: 300px;
         }
@@ -46,19 +45,21 @@
             color: black;
         }
 
+        #About {
+            display: none;  /* Hide the About section by default */
+        }
+
         #About p {
             padding: 20px;
             color: white;
             text-align: center;
         }
-        
 
         .button-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 30px;
-            
         }
 
         .button {
@@ -66,9 +67,8 @@
             max-width: 250px;
             height: 275px;
             border-radius: 30px;
-            
             background: rgb(255, 255, 255);
-            box-shadow: 
+            box-shadow:
                 25px 25px 75px rgba(0, 225, 255, 0.25),
                 10px 10px 170px rgba(10, 24, 220, 0.25),
                 inset 5px 5px 15px rgb(119, 119, 119),
@@ -80,28 +80,24 @@
         }
 
         .button:hover {
-            box-shadow: 
+            box-shadow:
                 30px 30px 80px lightblue,
                 15px 15px 180px lightblue,
                 inset 5px 5px 15px rgb(119, 119, 119),
                 inset 5px 5px 25px rgb(119, 119, 119);
             transform: scale(1.05);
             transition-duration: 2s;
-            
-
         }
 
         .button img {
             position: center;
             max-height: 250px;
             max-width: 250px;
-            padding: 0px 0px 0px 0px;
-            /* object-fit: cover; */
         }
 
         .label {
             position: absolute;
-            bottom:20px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -158,13 +154,13 @@
         </div>
     </section>
 
-<section id="About">
-    <p>
-        Jainam Matrimony offers seamless path to matrimonial bliss, specifically designed for parents within the Jain Sampradaya seeking ideal life partners for their cherished ones.<br><br>As a burgeoning matchmaking enterprise catering to singles worldwide, we prioritize delivering comprehensive family and background insights on authentic profiles. Our commitment is to empower you with the confidence to take the next step in a secure and user-friendly environment. Join us in your journey to find meaningful connections to forge lasting bonds.
-    <p style="text-align: right;">- Jainam Matrimony</p><i class='fas fa-map-pin'></i>
-    </p>
-        
-</section>
+    <section id="About">
+        <p>
+            Jainam Matrimony offers a seamless path to matrimonial bliss, specifically designed for parents within the Jain Sampradaya seeking ideal life partners for their cherished ones.
+            <br><br>As a burgeoning matchmaking enterprise catering to singles worldwide, we prioritize delivering comprehensive family and background insights on authentic profiles. Our commitment is to empower you with the confidence to take the next step in a secure and user-friendly environment. Join us in your journey to find meaningful connections and forge lasting bonds.
+            <p style="text-align: right;">- Jainam Matrimony</p><i class='fas fa-map-pin'></i>
+        </p>
+    </section>
 
     <script>
         function showSection(sectionId) {
