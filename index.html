@@ -57,15 +57,21 @@
         }
 
         #About {
-            height: 100vh;
+            height: fit-content;
             display: none;  /* Hide the About section by default */
+            
         }
 
         #About p {
-            padding:20px 20px 0px 20px;
+            box-sizing: border-box;
+            border: 2px solid white;
+            padding:10px 10px 0px 10px;
+            margin: 100px 10px 10px 10px;
             color: white;
             text-align: center;
         }
+
+        
 
         .button-container {
             display: flex;
@@ -125,16 +131,10 @@
             text-shadow: 0px 0px 7px black;
         }
 
-        navbt{
-            border-radius: 20px 20px 0px 0px;
-            display: block;
-            color: white;
-            background-color: rgb(98, 98, 98);
-            text-align: center;
-            padding:7px 0px 0px 0px;
-            font-style: italic;
-            font-weight: bold;
-            font-size: auto;
+        .navbt{
+            color: white; 
+            font-weight: bold; 
+            margin: 20px 20px 20px 20px ;
         }
 
         @media screen and (max-width: 768px) {
@@ -195,12 +195,13 @@
         <p>
             Jainam Matrimony offers a seamless path to matrimonial bliss, specifically designed for parents within the Jain Sampradaya seeking ideal life partners for their cherished ones.
             <br><br>As a burgeoning matchmaking enterprise catering to singles worldwide, we prioritize delivering comprehensive family and background insights on authentic profiles. Our commitment is to empower you with the confidence to take the next step in a secure and user-friendly environment. Join us in your journey to find meaningful connections and forge lasting bonds.
-            <p style="text-align: right;">- Jainam Matrimony</p><i class='fas fa-map-pin'></i>
+
+            <br>
+            <br>- Jainam Matrimony -
         </p>
+        
     </section>
-    <navbt style="height: 30px;">
-     <b style="color: white; font-weight: bold; margin: 20px 20px 20px 20px ;">jainammatrimony.com | +91-8668619881</b>
-    </navbt>
+    
 
     <script>
         function showSection(sectionId) {
